@@ -7,7 +7,7 @@
 
 import Foundation
 
-internal struct CombinedParams: RequestParam, SessionParam {
+public struct CombinedParams: RequestParam, SessionParam {
     fileprivate let children: [RequestParam]
 
     init(children: [RequestParam]) {
